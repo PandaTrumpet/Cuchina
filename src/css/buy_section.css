@@ -1,0 +1,141 @@
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 414px;
+}
+
+.buy_text {
+  display: none;
+}
+.buy_photo {
+  /* box-shadow: 0 0 50px 0 #7c7070; */
+  border-radius: 50%;
+  box-shadow: 0 0 50px 0 #7c7070;
+}
+
+.buy_section_btn {
+  border-radius: 8px;
+  padding: 9px 20px;
+  min-width: 108px;
+  height: 29px;
+  background: rgba(188, 26, 26, 0.2);
+  border-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.buy_item_tittle {
+  font-weight: 700;
+  font-size: 20px;
+  color: #f3f3f3;
+}
+.buy_item {
+  display: flex;
+  gap: 44px;
+  justify-content: center;
+  align-items: center;
+}
+.buy_list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.buy_section {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.buy_container {
+  padding-top: 20px;
+}
+
+/* ==========================================Стрелки свайпер==================================== */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #f3f3f3;
+  font-size: 12px;
+  transform: rotate(-90deg);
+}
+.swiper-button-next {
+  right: 48%;
+  top: 16px;
+}
+
+.swiper-button-prev {
+  left: 48%;
+  top: 386px;
+}
+@media screen and (min-width: 1023px) {
+  .buy_container {
+    padding-top: 32px;
+  }
+  .buy_section {
+    height: 720px;
+  }
+  .container {
+    max-width: 1023px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+  .buy_text {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    color: #f3f3f3;
+    max-width: 406px;
+    margin-top: 16px;
+  }
+  .buy_item_tittle {
+    font-weight: 600;
+    font-size: 32px;
+    color: #f3f3f3;
+  }
+  .buy_section_btn {
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 9px 57px;
+    width: 202px;
+    height: 43px;
+    margin-left: 0;
+  }
+  .buy_item {
+    gap: 64px;
+  }
+  .buy_list {
+    gap: 0;
+  }
+  .down_item {
+    margin-top: -40px;
+  }
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 24px;
+  }
+  .swiper-button-prev {
+    left: 48%;
+    top: 704px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+  .buy_item {
+    gap: 90px;
+  }
+  .down_item {
+    margin-top: -42px;
+  }
+  .buy_section {
+    height: 720px;
+  }
+}

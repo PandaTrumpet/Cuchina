@@ -1,0 +1,66 @@
+/* ========================================================Modal window========================================== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.modal_header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  gap: 50px;
+  z-index: 999;
+  background: #100f0f;
+}
+.modal_title {
+}
+.modal_container {
+  /* margin: 0 auto; */
+  padding: 10px;
+}
+.header_item_link_modal {
+  font-weight: 600;
+  font-size: 20px;
+  color: #f3f3f3;
+}
+.header_list_modal {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+}
+.logo_container_modal {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.close_container {
+}
+.close_icon_modal {
+  width: 17px;
+  height: 17px;
+}
+.modal_logo_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.close_container {
+  display: flex;
+  align-items: center;
+}
+
+/* ========================================================Modal window========================================== */

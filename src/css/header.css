@@ -1,3 +1,125 @@
 .modal_header {
   display: none;
 }
+
+.header_section {
+  /* background: linear-gradient(
+    200deg,
+    rgba(111, 102, 102, 0.9) 0%,
+    rgba(16, 15, 15, 0.9) 88.73%,
+    rgba(16, 15, 15, 0.9) 99.98%
+  ); */
+}
+.header_container {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.title_logo_icon {
+  width: 32px;
+  height: 32px;
+}
+.logo-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #f3f3f3;
+  text-transform: uppercase;
+}
+
+.logo_container {
+  display: flex;
+  gap: 16px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.header_list {
+  display: none;
+}
+
+.header_btn {
+  display: none;
+}
+.burger_icon {
+  width: 31px;
+  height: 20px;
+}
+.burger_container {
+}
+
+.header_navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =======================================================Tablet============================================= */
+
+@media screen and (min-width: 1023px) {
+  .container {
+    max-width: 1023px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+  .header_container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .header_list {
+    display: flex;
+    gap: 52px;
+  }
+  .burger_container {
+    display: none;
+  }
+  .header_btn {
+    display: flex;
+    font-weight: 800;
+    font-size: 16px;
+    color: #f3f3f3;
+
+    border: 1px solid #f3f3f3;
+    border-radius: 16px;
+    width: 160px;
+
+    background-color: transparent;
+    padding: 10px 32px;
+    transition: color 200ms ease-in-out, border-color 200ms ease-in-out,
+      transform 200ms ease-in-out;
+  }
+  .header_btn:active {
+    color: rgba(188, 26, 26, 0.5);
+    border-color: rgba(188, 26, 26, 0.5);
+  }
+  .header_btn:hover {
+    transform: scale(1.1);
+  }
+  .header_item_link {
+    font-weight: 600;
+    font-size: 16px;
+    color: #f3f3f3;
+    transition: color 200ms ease-in-out;
+  }
+  .header_item_link:hover {
+    color: rgba(188, 26, 26, 0.5);
+  }
+}
+
+/* =======================================================Tablet============================================= */
+
+/* =======================================================Desktop============================================= */
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+  .header_navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+/* =======================================================Desktop============================================= */

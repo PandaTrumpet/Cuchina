@@ -1,14 +1,16 @@
-<header>
-  <div class="container">
-    <nav>
+<header class="header_section">
+  <div class="container header_container">
+    <nav class="header_navigation">
       <div class="logo_container">
-        <img src="" alt="Logo" />
-        <h3 class="logo-title">Cucina</h3>
+        <svg class="title_logo_icon">
+          <use href="../img/sprite.svg#logo_icon"></use>
+        </svg>
+        <a href="../index.html" class="logo-title">Cucina</a>
       </div>
 
       <div class="burger_container">
-        <svg>
-          <use></use>
+        <svg class="burger_icon">
+          <use href="../img/sprite.svg#burger"></use>
         </svg>
       </div>
       <ul class="header_list">
@@ -25,35 +27,32 @@
           <a href="" class="header_item_link">Gallery</a>
         </li>
       </ul>
-      <address class="header_address">Contact us</address>
+      <button class="header_btn">Contact us</button>
     </nav>
   </div>
 </header>
-<div class="modal_header">
-  <div class="modal_container">
-    <div class="modal_logo_container">
-      <img src="" alt="Logo" class="modal_logo" />
-      <h3 class="modal_title">Cucina</h3>
-    </div>
-    <ul class="header_list">
-      <li class="header_list_item">
-        <a href="" class="header_item_link">Home</a>
-      </li>
-      <li class="header_list_item">
-        <a href="" class="header_item_link">Store</a>
-      </li>
-      <li class="header_list_item">
-        <a href="" class="header_item_link">Recipes</a>
-      </li>
-      <li class="header_list_item">
-        <a href="" class="header_item_link">Gallery</a>
-      </li>
-    </ul>
-    <a class="address_link" href="">Contact us</a>
-    <div class="burger_modal_container">
-      <svg class="modal_burger">
+
+<!-- <div class="modal_contact">
+  <div class="mcontact_container">
+    <h2>Leave your contacts and we will contact you</h2>
+    <form class="contact_form">
+      <label for=""
+        >Name
+        <input type="text" />
+      </label>
+      <label for="">Telephone <input type="text" /> </label>
+      <label for=""
+        >Email
+        <input type="text" />
+      </label>
+      <label for="">
+        <textarea name="" id=""></textarea>
+      </label>
+    </form>
+    <div class="close_container">
+      <svg class="contact_close_icon">
         <use></use>
       </svg>
     </div>
   </div>
-</div>
+</div> -->

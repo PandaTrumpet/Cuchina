@@ -2,8 +2,5 @@
 @import url('./header.css');
 @import url('./main.css');
 @import url('./footer.css');
-body {
-  background: #100f0f;
-  color: #f3f3f3;
-  font-family: 'Montserrat', sans-serif;
-}
+@import url('./base.css');
+@import url('./header_modal.css');
