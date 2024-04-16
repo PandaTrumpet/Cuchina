@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
       integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
@@ -17,23 +21,25 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Vanilla App Template</title>
+    <title>CUCINA</title>
     
     <script type="module" crossorigin src="/Chucina/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Chucina/assets/index-467d7a2a.css">
+    <link rel="stylesheet" href="/Chucina/assets/index-a6d273e3.css">
   </head>
   <body>
-    <header>
-  <div class="container">
-    <nav>
+    <header class="header_section">
+  <div class="container header_container">
+    <nav class="header_navigation">
       <div class="logo_container">
-        <img src="" alt="Logo" />
-        <h3 class="logo-title">Cucina</h3>
+        <svg class="title_logo_icon">
+          <use href="../img/sprite.svg#logo_icon"></use>
+        </svg>
+        <a href="../index.html" class="logo-title">Cucina</a>
       </div>
 
       <div class="burger_container">
-        <svg>
-          <use></use>
+        <svg class="burger_icon">
+          <use href="../img/sprite.svg#burger"></use>
         </svg>
       </div>
       <ul class="header_list">
@@ -50,28 +56,446 @@
           <a href="" class="header_item_link">Gallery</a>
         </li>
       </ul>
-      <address class="header_address">Contact us</address>
+      <button class="header_btn">Contact us</button>
     </nav>
   </div>
 </header>
-<div class="modal_header">
-  <div class="modal_container">
-    <div class="modal_logo_container">
-      <img src="" alt="Logo" class="modal_logo" />
-      <h3 class="modal_title">Cucina</h3>
+
+<!-- <div class="modal_contact">
+  <div class="mcontact_container">
+    <h2>Leave your contacts and we will contact you</h2>
+    <form class="contact_form">
+      <label for=""
+        >Name
+        <input type="text" />
+      </label>
+      <label for="">Telephone <input type="text" /> </label>
+      <label for=""
+        >Email
+        <input type="text" />
+      </label>
+      <label for="">
+        <textarea name="" id=""></textarea>
+      </label>
+    </form>
+    <div class="close_container">
+      <svg class="contact_close_icon">
+        <use></use>
+      </svg>
     </div>
-    <ul class="header_list">
-      <li class="header_list_item">
-        <a href="" class="header_item_link">Home</a>
+  </div>
+</div> -->
+
+    <main>
+  <section class="hero_section">
+  <div class="container hero_container">
+    <div>
+      <div class="title_container">
+        <svg class="hero_icon">
+          <use href="../img/sprite.svg#hero_vector"></use>
+        </svg>
+        <h1 class="hero_title">Cucins di catherina</h1>
+      </div>
+      <p class="hero_text">
+        We know,<br />
+        you will <span class="hero_text_span">love</span> our product
+      </p>
+
+      <div class="hero_photo_container">
+        <img
+          class="hero_image"
+          src="../img/hero/mobile/ketchup.png"
+          srcset="
+            ../img/hero/mobile/ketchup.png     202w,
+            ../img/hero/mobile/ketchup@2x.png  404w,
+            ../img/hero/desktop/ketchup@2x.png 610w,
+            ../img/hero/tablet/ketchup.png     305w,
+            ../img/hero/tablet/ketchup@2x.png  610w,
+            ../img/hero/desktop/ketchup.png    305w
+          "
+          alt="Ketchup-butle-photo"
+          sizes="(min-width: 1280px) 305px, (min-width: 1023px) 305px, (max-width: 1023px) 202px"
+        />
+        <ul class="photo_hero_list">
+          <li class="photo_hero_list_item">
+            <ul class="hero_photo_svg_container">
+              <li>
+                <svg class="hero_round_higer higer_first">
+                  <use href="../img/sprite.svg#hero_red_point"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="hero_round_down down_first">
+                  <use href="../img/sprite.svg#hero_red_point"></use>
+                </svg>
+              </li>
+              <li class="list">
+                <svg class="hero_line_first">
+                  <use href="../img/line_first.svg#line"></use>
+                </svg>
+              </li>
+            </ul>
+            <p class="photo_hero_text text_one">ITALY TOMATOES</p>
+          </li>
+          <li class="photo_hero_list_item">
+            <ul class="hero_photo_svg_container">
+              <li>
+                <svg class="hero_round_higer higer_second">
+                  <use href="../img/sprite.svg#hero_red_point"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="hero_round_down down_second">
+                  <use href="../img/sprite.svg#hero_red_point"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="hero_line_second">
+                  <use href="../img/line_second.svg#line"></use>
+                </svg>
+              </li>
+            </ul>
+            <p class="photo_hero_text text_two">FRESH GARLIC</p>
+          </li>
+          <li class="photo_hero_list_item">
+            <ul class="hero_photo_svg_container">
+              <li>
+                <svg class="hero_round_higer higer_third">
+                  <use href="../img/sprite.svg#hero_red_point"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="hero_round_down down_third">
+                  <use href="../img/sprite.svg#hero_red_point"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="hero_line_third">
+                  <use href="../img/line_third.svg#line"></use>
+                </svg>
+              </li>
+            </ul>
+            <p class="photo_hero_text text_three">WHITE WINE</p>
+          </li>
+          <li class="photo_hero_list_item">
+            <ul class="hero_photo_svg_container">
+              <li>
+                <svg class="hero_round_higer higer_forth">
+                  <use href="../img/sprite.svg#hero_red_point"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="hero_round_down down_forth">
+                  <use href="../img/sprite.svg#hero_red_point"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="hero_line_fourth">
+                  <use href="../img/line_fourth.svg#line"></use>
+                </svg>
+              </li>
+            </ul>
+            <p class="photo_hero_text text_fohr">FRESH BASIL</p>
+          </li>
+        </ul>
+      </div>
+      <button class="buy_btn">Buy now</button>
+
+      <ul class="hero_taste_list">
+        <li class="taste_item">
+          <p class="taste_list_text taste_item_text">
+            <span class="number_hero_text">14</span
+            ><span class="taste_list_first_text">different tastes</span>
+          </p>
+        </li>
+        <li>
+          <svg class="hero_down_text_icon">
+            <use href="../img/sprite.svg#hero_down_text_icon"></use>
+          </svg>
+        </li>
+        <li class="taste_item">
+          <p class="taste_list_text taste_item_text">
+            <span class="number_hero_text">31</span>
+            <span class="taste_list_second_text"
+              >factories around the world</span
+            >
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="social_contaienr">
+      <ul class="social_list">
+        <li class="social_list_item">
+          <svg class="social_icon">
+            <use href="../img/sprite.svg#soc_icon"></use>
+          </svg>
+        </li>
+        <li class="social_list_item">
+          <svg class="social_icon">
+            <use href="../img/sprite.svg#instagram_icon"></use>
+          </svg>
+        </li>
+        <li class="social_list_item">
+          <svg class="social_icon">
+            <use href="../img/sprite.svg#youtube_icon"></use>
+          </svg>
+        </li>
+        <li class="social_list_item">
+          <svg class="social_icon">
+            <use href="../img/sprite.svg#twitter_icon"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <div class="buy_section">
+  <div class="container buy_container swiper-wrapper">
+    <div class="slider_container swiper-slide">
+      <ul class="buy_list">
+        <li class="buy_item">
+          <img
+            src="../img/buy_section/mobile/ketchup.png"
+            srcset="
+              ../img/buy_section/mobile/ketchup.png     156w,
+              ../img/buy_section/mobile/ketchup@2x.png  312w,
+              ../img/buy_section/tablet/ketchup.png     349w,
+              ../img/buy_section/tablet/ketchup@2x.png  698w,
+              ../img/buy_section/desktop/ketchup.png    349w,
+              ../img/buy_section/desktop/ketchup@2x.png 698w
+            "
+            sizes="(min-width: 1280px) 349px, (min-width: 1023px) 349px, (max-width: 1023px) 156px"
+            alt="ketchup"
+            class="buy_photo"
+          />
+          <div class="description_buy_container">
+            <h3 class="buy_item_tittle">Classic sauce</h3>
+            <p class="buy_text">
+              The most delicate taste of tomatoes, combined with branded spices
+              and white wine, will make your dish incredibly tasty.
+            </p>
+            <button class="buy_section_btn">Buy now</button>
+          </div>
+        </li>
+        <li class="buy_item down_item">
+          <div class="description_buy_container">
+            <h3 class="buy_item_tittle">Spicy sauce</h3>
+            <p class="buy_text">
+              For thrill-seekers, we added hot chili pepper to our sauce, it
+              also reveals all the tastes and aromas of the sauce well.
+            </p>
+            <button class="buy_section_btn">Buy now</button>
+          </div>
+          <img
+            src="../img/buy_section/mobile/red_hot_chili.png"
+            srcset="
+              ../img/buy_section/mobile/red_hot_chili.png     156w,
+              ../img/buy_section/mobile/red_hot_chili@2x.png  312w,
+              ../img/buy_section/tablet/red_hot_chili.png     349w,
+              ../img/buy_section/tablet/red_hot_chili@2x.png  698w,
+              ../img/buy_section/desktop/red_hot_chili.png    349w,
+              ../img/buy_section/desktop/red_hot_chili@2x.png 698w
+            "
+            sizes="(min-width: 1280px) 349px, (min-width: 1023px) 349px, (max-width: 1023px) 156px"
+            alt=""
+            class="buy_photo"
+          />
+        </li>
+      </ul>
+    </div>
+    <div class="slider_container swiper-slide">
+      <ul class="buy_list">
+        <li class="buy_item">
+          <img
+            src="../img/buy_section/mobile/classic_ketchup.png"
+            srcset="
+              ../img/buy_section/mobile/classic_ketchup.png     156w,
+              ../img/buy_section/mobile/classic_ketchup@2x.png  312w,
+              ../img/buy_section/tablet/classic_ketchup.png     349w,
+              ../img/buy_section/tablet/classic_ketchup@2x.png  698w,
+              ../img/buy_section/desktop/classic_ketchup.png    349w,
+              ../img/buy_section/desktop/classic_ketchup@2x.png 698w
+            "
+            sizes="(min-width: 1280px) 349px, (min-width: 1023px) 349px, (max-width: 1023px) 156px"
+            alt=""
+            class="buy_photo"
+          />
+          <div class="description_buy_container">
+            <h3 class="buy_item_tittle">Classic sauce</h3>
+            <p class="buy_text">
+              The most delicate taste of tomatoes, combined with branded spices
+              and white wine, will make your dish incredibly tasty.
+            </p>
+            <button class="buy_section_btn">Buy now</button>
+          </div>
+        </li>
+        <li class="buy_item down_item">
+          <div class="description_buy_container">
+            <h3 class="buy_item_tittle">Spicy sauce</h3>
+            <p class="buy_text">
+              For thrill-seekers, we added hot chili pepper to our sauce, it
+              also reveals all the tastes and aromas of the sauce well.
+            </p>
+            <button class="buy_section_btn">Buy now</button>
+          </div>
+          <img
+            src="../img/buy_section/mobile/hot.png"
+            srcset="
+              ../img/buy_section/mobile/hot.png     156w,
+              ../img/buy_section/mobile/hot@2x.png  312w,
+              ../img/buy_section/tablet/hot.png     349w,
+              ../img/buy_section/tablet/hot@2x.png  698w,
+              ../img/buy_section/desktop/hot.png    349w,
+              ../img/buy_section/desktop/hot@2x.png 698w
+            "
+            sizes="(min-width: 1280px) 349px, (min-width: 1023px) 349px, (max-width: 1023px) 156px"
+            alt=""
+            class="buy_photo"
+          />
+        </li>
+      </ul>
+    </div>
+
+    <div class="slider_container swiper-slide">
+      <ul class="buy_list">
+        <li class="buy_item">
+          <img
+            src="../img/buy_section/mobile/tomato.png"
+            alt="tomatoes"
+            class="buy_photo"
+            srcset="
+              ../img/buy_section/mobile/tomato.png     156w,
+              ../img/buy_section/mobile/tomato@2x.png  312w,
+              ../img/buy_section/tablet/tomato.png     349w,
+              ../img/buy_section/tablet/tomato@2x.png  698w,
+              ../img/buy_section/desktop/tomato.png    349w,
+              ../img/buy_section/desktop/tomato@2x.png 698w
+            "
+            sizes="(min-width: 1280px) 349px, (min-width: 1023px) 349px, (max-width: 1023px) 156px"
+          />
+
+          <div class="description_buy_container">
+            <h3 class="buy_item_tittle">Classic sauce</h3>
+            <p class="buy_text">
+              The most delicate taste of tomatoes, combined with branded spices
+              and white wine, will make your dish incredibly tasty.
+            </p>
+            <button class="buy_section_btn">Buy now</button>
+          </div>
+        </li>
+        <li class="buy_item down_item">
+          <div class="description_buy_container">
+            <h3 class="buy_item_tittle">Spicy sauce</h3>
+            <p class="buy_text">
+              For thrill-seekers, we added hot chili pepper to our sauce, it
+              also reveals all the tastes and aromas of the sauce well.
+            </p>
+            <button class="buy_section_btn">Buy now</button>
+          </div>
+          <img
+            src="../img/buy_section/mobile/peper.png"
+            srcset="
+              ../img/buy_section/mobile/peper.png     156w,
+              ../img/buy_section/mobile/peper@2x.png  312w,
+              ../img/buy_section/tablet/peper.png     349w,
+              ../img/buy_section/tablet/peper@2x.png  698w,
+              ../img/buy_section/desktop/peper.png    349w,
+              ../img/buy_section/desktop/peper@2x.png 698w
+            "
+            sizes="(min-width: 1280px) 349px, (min-width: 1023px) 349px, (max-width: 1023px) 156px"
+            alt="Chili"
+            class="buy_photo"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+
+  <section class="video_section">
+  <div class="container">
+    <ul class="video_list">
+      <li class="video_item higer_video">
+        <img
+          src="../img/video_section/desktop/image1.png"
+          alt=""
+          class="video_item_photo"
+          srcset="
+            ../img/video_section/mobile/image1.png     246w,
+            ../img/video_section/mobile/image1@2x.png  492w,
+            ../img/video_section/tablet/image1.png     451w,
+            ../img/video_section/tablet/image1@2x.png  902w,
+            ../img/video_section/desktop/image1.png    442w,
+            ../img/video_section/desktop/image1@2x.png 884w
+          "
+          sizes="(min-width: 1280px) 442px, (min-width: 1023px) 451px, (max-width: 1023px) 246px"
+        />
+        <h3 class="video_item_title">Bell pepper pasta</h3>
+      </li>
+      <li class="video_item down_video">
+        <img
+          src="../img/video_section/desktop/image2.png"
+          alt=""
+          class="video_item_photo"
+          srcset="
+            ../img/video_section/mobile/image2.png     246w,
+            ../img/video_section/mobile/image2@2x.png  492w,
+            ../img/video_section/tablet/image2.png     450w,
+            ../img/video_section/tablet/image2@2x.png  900w,
+            ../img/video_section/desktop/image2.png    442w,
+            ../img/video_section/desktop/image2@2x.png 884w
+          "
+          sizes="(min-width: 1280px) 442px, (min-width: 1023px) 450px, (max-width: 1023px) 246px"
+        />
+        <h3 class="video_item_title">Tomato paste</h3>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <!-- <section class="photo_sectoin_swiper">
+  <div class="container photo_contaienr">
+    <div class="swiper_contaienr"><img src="" alt="" /></div>
+    <div class="swiper_contaienr"><img src="" alt="" /></div>
+    <div class="swiper_contaienr"><img src="" alt="" /></div>
+  </div>
+</section>
+ -->
+</main>
+
+    <div class="modal_header">
+  <div class="modal_container container">
+    <div class="modal_logo_container">
+      <div class="logo_container_modal">
+        <svg class="title_logo_icon">
+          <use href="../img/sprite.svg#logo_icon"></use>
+        </svg>
+        <a href="index.html" class="modal_title">Cucina</a>
+      </div>
+
+      <div class="close_container">
+        <svg class="close_icon_modal">
+          <use href="../img/sprite.svg#close_icon"></use>
+        </svg>
+      </div>
+    </div>
+
+    <ul class="header_list_modal">
+      <li class="header_list_item_modal">
+        <a href="" class="header_item_link_modal">Home</a>
       </li>
       <li class="header_list_item">
-        <a href="" class="header_item_link">Store</a>
+        <a href="" class="header_item_link_modal">Store</a>
       </li>
       <li class="header_list_item">
-        <a href="" class="header_item_link">Recipes</a>
+        <a href="" class="header_item_link_modal">Recipes</a>
       </li>
       <li class="header_list_item">
-        <a href="" class="header_item_link">Gallery</a>
+        <a href="" class="header_item_link_modal">Gallery</a>
       </li>
     </ul>
     <a class="address_link" href="">Contact us</a>
@@ -83,205 +507,8 @@
   </div>
 </div>
 
-    <main>
-  <section class="hero_section">
-    <div class="container hero_container">
-      <div>
-        <h1 class="hero_title">Cucins di catherina</h1>
-        <p class="hero_text"></p>
-        <button class="buy_btn">Buy now</button>
-        <ul class="hero_taste_list">
-          <li class="taste_item">
-            <p class="taste_list_text"><span>14</span>different tastes</p>
-          </li>
-          <li class="taste_item">
-            <p class="taste_list_text">
-              <span>31</span>factories around the world
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="hero_photo_container">
-        <img class="hero_image" src="" alt="Ketchup-butle-photo" />
-        <ul class="photo_hero_list">
-          <li class="photo_hero_list_item">
-            <div class="hero_photo_svg_container">
-              <svg class="hero_svg">
-                <use></use>
-              </svg>
-              <svg class="hero_svg">
-                <use></use>
-              </svg>
-              <svg class="hero_svg">
-                <use></use>
-              </svg>
-            </div>
-            <p class="photo_hero_text">ITALY TOMATOES</p>
-          </li>
-          <li class="photo_hero_list_item">
-            <div class="hero_photo_svg_container">
-              <svg class="hero_svg">
-                <use></use>
-              </svg>
-              <svg class="hero_svg">
-                <use></use>
-              </svg>
-              <svg class="hero_svg">
-                <use></use>
-              </svg>
-            </div>
-            <p class="photo_hero_text">FRESH GARLIC</p>
-          </li>
-          <li class="photo_hero_list_item">
-            <div class="hero_photo_svg_container">
-              <svg class="hero_svg">
-                <use></use>
-              </svg>
-              <svg class="hero_svg">
-                <use></use>
-              </svg>
-              <svg class="hero_svg">
-                <use></use>
-              </svg>
-            </div>
-            <p class="photo_hero_text">WHITE WINE</p>
-          </li>
-          <li class="photo_hero_list_item">
-            <div class="hero_photo_svg_container">
-              <svg class="hero_svg">
-                <use></use>
-              </svg>
-              <svg class="hero_svg">
-                <use></use>
-              </svg>
-              <svg class="hero_svg">
-                <use></use>
-              </svg>
-            </div>
-            <p class="photo_hero_text">FRESH BASIL</p>
-          </li>
-        </ul>
-      </div>
-      <div class="social_contaienr">
-        <ul class="social_list">
-          <li class="social_list_item">
-            <svg class="social_icon">
-              <use></use>
-            </svg>
-          </li>
-          <li class="social_list_item">
-            <svg class="social_icon">
-              <use></use>
-            </svg>
-          </li>
-          <li class="social_list_item">
-            <svg class="social_icon">
-              <use></use>
-            </svg>
-          </li>
-          <li class="social_list_item">
-            <svg class="social_icon">
-              <use></use>
-            </svg>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="buy_section">
-    <div class="container buy_container">
-      <div>
-        <ul class="buy_list">
-          <li class="buy_item">
-            <img src="" alt="" class="buy_photo" />
-            <h3 class="buy_item_tittle">Classic sauce</h3>
-            <p class="buy_text">
-              The most delicate taste of tomatoes, combined with branded spices
-              and white wine, will make your dish incredibly tasty.
-            </p>
-            <button class="buy_btn">Buy now</button>
-          </li>
-          <li class="buy_item">
-            <img src="" alt="" class="buy_photo" />
-            <h3 class="buy_item_tittle">Spicy sauce</h3>
-            <p class="buy_text">
-              For thrill-seekers, we added hot chili pepper to our sauce, it
-              also reveals all the tastes and aromas of the sauce well.
-            </p>
-            <button class="buy_btn">Buy now</button>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <ul class="buy_list">
-          <li class="buy_item">
-            <img src="" alt="" class="buy_photo" />
-            <h3 class="buy_item_tittle">Classic sauce</h3>
-            <p class="buy_text">
-              The most delicate taste of tomatoes, combined with branded spices
-              and white wine, will make your dish incredibly tasty.
-            </p>
-            <button class="buy_btn">Buy now</button>
-          </li>
-          <li class="buy_item">
-            <img src="" alt="" class="buy_photo" />
-            <h3 class="buy_item_tittle">Spicy sauce</h3>
-            <p class="buy_text">
-              For thrill-seekers, we added hot chili pepper to our sauce, it
-              also reveals all the tastes and aromas of the sauce well.
-            </p>
-            <button class="buy_btn">Buy now</button>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <ul class="buy_list">
-          <li class="buy_item">
-            <img src="" alt="" class="buy_photo" />
-            <h3 class="buy_item_tittle">Classic sauce</h3>
-            <p class="buy_text">
-              The most delicate taste of tomatoes, combined with branded spices
-              and white wine, will make your dish incredibly tasty.
-            </p>
-            <button class="buy_btn">Buy now</button>
-          </li>
-          <li class="buy_item">
-            <img src="" alt="" class="buy_photo" />
-            <h3 class="buy_item_tittle">Spicy sauce</h3>
-            <p class="buy_text">
-              For thrill-seekers, we added hot chili pepper to our sauce, it
-              also reveals all the tastes and aromas of the sauce well.
-            </p>
-            <button class="buy_btn">Buy now</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="video_section">
-    <div class="container">
-      <ul class="video_list">
-        <li class="video_item">
-          <img src="" alt="" class="video_item_photo" />
-          <h3 class="video_item_title">Bell pepper pasta</h3>
-        </li>
-        <li class="video_item">
-          <img src="" alt="" class="video_item_photo" />
-          <h3 class="video_item_title">Tomato paste</h3>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="photo_sectoin_swiper">
-    <div class="container photo_contaienr">
-      <div class="swiper_contaienr"><img src="" alt="" /></div>
-      <div class="swiper_contaienr"><img src="" alt="" /></div>
-      <div class="swiper_contaienr"><img src="" alt="" /></div>
-    </div>
-  </section>
-</main>
 
-    <footer class="footer_section">
+    <!-- <footer class="footer_section">
   <div class="container footer_container">
     <div class="footer_logo_container">
       <img src="" alt="Logo" />
@@ -355,8 +582,9 @@
     </p>
   </div>
 </footer>
+ -->
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
   </body>
 </html>
